@@ -1,6 +1,6 @@
 class EmailParser
 
-  def initialize(string)
+  def parse(string)
     string.split(/[\s,]/).uniq
   end
 
