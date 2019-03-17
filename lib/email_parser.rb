@@ -1,7 +1,11 @@
 class EmailParser
 
+  def initialize(string)
+    @csv = string
+  end
+
   def parse
-    self.split(/[\s,]/).uniq
+    @csv.split(/[\s,]/).uniq
   end
 
 end
