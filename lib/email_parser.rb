@@ -1,7 +1,7 @@
 class EmailParser
 
   def initialize(string)
-    arr = string.split(", " && " ")
+    string.split(/[\s,]/)
   end
 
 
