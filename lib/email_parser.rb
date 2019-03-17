@@ -5,7 +5,7 @@ class EmailParser
   end
 
   def parse
-    @csv.split(/[\s,\s]/).uniq
+    @csv.split(/, | /).uniq
   end
 
 end
